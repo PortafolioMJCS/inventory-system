@@ -1,10 +1,10 @@
-# ?? Sistema de Inventario Full Stack
+#  Sistema de Inventario Full Stack
 
-Aplicaci髇 full stack para la gesti髇 de productos, construida con arquitectura basada en microservicios, tipado fuerte con TypeScript y pruebas automatizadas.
+Aplicaci贸n full stack para la gesti贸n de productos, construida con arquitectura basada en microservicios, tipado fuerte con TypeScript y pruebas automatizadas.
 
 ---
 
-## ?? Tecnolog韆s
+## ?? Tecnolog铆as
 
 ### Backend
 
@@ -25,7 +25,7 @@ Aplicaci髇 full stack para la gesti髇 de productos, construida con arquitectura 
 ### Bases de datos
 
 * MySQL ? datos principales
-* MongoDB ? logs / bit醕ora
+* MongoDB ? logs / bit谩cora
 
 ### DevOps
 
@@ -39,8 +39,8 @@ Frontend (React + TS) ? API REST (Laravel) ? Microservicio (Node.js) ? MongoDB
 
 * Laravel gestiona:
 
-  * l骻ica de negocio
-  * autenticaci髇
+  * l贸gica de negocio
+  * autenticaci贸n
   * persistencia en MySQL
 
 * Node.js:
@@ -54,7 +54,7 @@ Frontend (React + TS) ? API REST (Laravel) ? Microservicio (Node.js) ? MongoDB
 
 ---
 
-## ?? Autenticaci髇
+## ?? Autenticaci贸n
 
 * Login con token
 * Middleware en Laravel para proteger endpoints
@@ -65,9 +65,9 @@ Frontend (React + TS) ? API REST (Laravel) ? Microservicio (Node.js) ? MongoDB
 ## ?? Funcionalidades
 
 * CRUD de productos
-* Autenticaci髇 de usuarios
+* Autenticaci贸n de usuarios
 * Registro de logs (crear, editar, eliminar)
-* Visualizaci髇 de logs por producto
+* Visualizaci贸n de logs por producto
 * UI con:
 
   * validaciones
@@ -80,8 +80,8 @@ Frontend (React + TS) ? API REST (Laravel) ? Microservicio (Node.js) ? MongoDB
 
 ### Backend (Laravel)
 
-* Pruebas unitarias y de integraci髇
-* Validaci髇 de:
+* Pruebas unitarias y de integraci贸n
+* Validaci贸n de:
 
   * endpoints
   * persistencia en base de datos
@@ -90,7 +90,7 @@ Frontend (React + TS) ? API REST (Laravel) ? Microservicio (Node.js) ? MongoDB
 ### Frontend (React + TypeScript)
 
 * Testing de componentes
-* Validaci髇 de:
+* Validaci贸n de:
 
   * renderizado
   * consumo de API
@@ -98,7 +98,7 @@ Frontend (React + TS) ? API REST (Laravel) ? Microservicio (Node.js) ? MongoDB
 
 ---
 
-## ?? Instalaci髇
+## ?? Instalaci贸n
 
 ```bash
 git clone <repo>
@@ -108,13 +108,13 @@ docker-compose up --build
 
 ---
 
-## ? Configuraci髇 autom醫ica
+## ? Configuraci贸n autom谩tica
 
 Al iniciar el proyecto:
 
-* Migraciones autom醫icas
+* Migraciones autom谩ticas
 * Seeders con datos iniciales
-* Vol鷐enes Docker para persistencia
+* Vol煤menes Docker para persistencia
 
 ---
 
@@ -162,21 +162,21 @@ Password:
 ## ?? Aprendizajes
 
 * Arquitectura de microservicios
-* Integraci髇 Full Stack (Laravel + React + Node)
+* Integraci贸n Full Stack (Laravel + React + Node)
 * Uso de TypeScript en frontend y backend
-* Testing en m鷏tiples capas
+* Testing en m煤ltiples capas
 * Manejo de bases de datos SQL y NoSQL
-* Contenerizaci髇 con Docker
+* Contenerizaci贸n con Docker
 
 ---
 
 ## ?? Objetivo del proyecto
 
-Proyecto desarrollado como pr醕tica de portafolio enfocado en:
+Proyecto desarrollado como pr谩ctica de portafolio enfocado en:
 
-* Preparaci髇 para trabajo remoto
-* Buenas pr醕ticas de desarrollo
-* Simulaci髇 de entorno real (API + microservicios + testing)
+* Preparaci贸n para trabajo remoto
+* Buenas pr谩cticas de desarrollo
+* Simulaci贸n de entorno real (API + microservicios + testing)
 
 ---
 
