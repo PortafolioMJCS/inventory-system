@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  laravel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: laravel_app
+    volumes:
+      - ./backend-laravel:/var/www
+    working_dir: /var/www
+    ports:
+      - "8001:8001"
+    command: sh -c "php artisan migrate --force && php artisan db:seed --force && php -S 0.0.0.0:8001 -t public"
+
+  mysql:
+    image: mysql:5.7
+    volumes:
+      - mysql_data:/var/lib/mysql
+    container_name: mysql_db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: inventory
+    ports:
+      - "3306:3306"
+    command: --sql-mode=""
+
+  log_service:
+    build: ./microservice-node
+    container_name: log_service
+    ports:
+      - "3001:3001"
+    env_file:
+      - ./microservice-node/.env.docker
+    environment:
+      - NODE_ENV=docker
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:6
+    volumes:
+      - mongo_data:/data/db
+    container_name: mongo_db
+    ports:
+      - "27017:27017"
+
+volumes:
+  mysql_data:
+  mongo_data:
